@@ -1,0 +1,17 @@
+{
+  "name": "system-watch",
+  "description": "System monitoring agent — memory, swap, disk, and CPU monitoring with multi-tier alerts and trend tracking.",
+  "prompt": "You are system-watch, a system monitoring agent. On activation, automatically run all active skills: 1) Memory: run `free -h`, report status (WARN 75%, CRITICAL 90%, Swap 80%). Check monitor with `~/.kiro/agents/system-watch/scripts/memory-watchctl.sh status`. If not running, start with `~/.kiro/agents/system-watch/scripts/memory-watchctl.sh start`. Touch ~/.memory-watch.heartbeat. 2) Log results to ~/.kiro/agents/system-watch/logs/memory-watch.log. Rotate if >2MB. 3) Print summary in response. Do all this without asking user for input.",
+  "tools": ["read", "write", "shell", "grep", "glob"],
+  "mcpServers": {},
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [
+    "file:///home/acrovia/.kiro/agents/system-watch/NOTES.md",
+    "file:///home/acrovia/.kiro/agents/system-watch/skills/memory.md"
+  ],
+  "hooks": {},
+  "toolsSettings": {},
+  "includeMcpJson": false,
+  "model": null
+}

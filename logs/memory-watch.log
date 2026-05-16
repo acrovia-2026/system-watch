@@ -1,0 +1,8 @@
+2026-05-16 21:41:48 [memory-watch] memory-watch started (PID: 6747)
+2026-05-16 21:41:51 [memory-watch] memory-watch stopped.
+2026-05-16 21:41:55 [memory-watch] memory-watch started (PID: 6785)
+2026-05-16 21:42:05 [memory-watch] No heartbeat for 300s — auto-stopping.
+2026-05-16 21:42:05 [memory-watch] memory-watch stopped.
+[2026-05-16T22:41:30+02:00] Memory check: OK — Mem 1.2G/7.7G (15%), Swap 0B/8.0G (0%)
+2026-05-16 22:41:30 [memory-watch] memory-watch started (PID: 8334)
+2026-05-16 22:48:25 [memory-watch] memory-watch stopped.
