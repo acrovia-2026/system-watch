@@ -14,6 +14,8 @@ A kiro-cli agent that monitors system resources. Supports multiple skills (memor
 | File | Purpose |
 |------|---------|
 | `memory.md` | Memory-watch skill documentation |
+| `cpu.md` | CPU-watch skill documentation |
+| `disk.md` | Disk-watch skill documentation |
 
 ### logs/
 
@@ -21,6 +23,8 @@ A kiro-cli agent that monitors system resources. Supports multiple skills (memor
 |------|---------|
 | `memory-watch.log` | Runtime log — alerts, start/stop events, top processes |
 | `memory-watch-trends.csv` | Historical memory/swap snapshots every 10s |
+| `cpu-watch.log` | CPU usage and load average log |
+| `disk-watch.log` | Disk usage per partition log |
 
 ### scripts/
 
@@ -77,6 +81,11 @@ column -t -s, ~/.kiro/agents/system-watch/logs/memory-watch-trends.csv | tail -2
 | Memory | WARN | 75% |
 | Memory | CRITICAL | 90% |
 | Swap | WARN | 80% |
+| CPU | WARN | 75% |
+| CPU | CRITICAL | 90% |
+| Load Avg | WARN | cores × 1.5 |
+| Disk | WARN | 80% |
+| Disk | CRITICAL | 95% |
 
 ## Adding New Skills
 
